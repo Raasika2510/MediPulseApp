@@ -8,7 +8,7 @@ import { useState, useEffect } from "react"
 import { useForm } from "react-hook-form";
 export default function GetStarted() {  
 
-  const {register, handleSubmit, reset, formState:{errors}} = useForm()
+const {register, handleSubmit, reset, formState:{errors}} = useForm();
  const router = useRouter();
 
   function submitHandler(data){
@@ -19,10 +19,9 @@ export default function GetStarted() {
       headers: {
         'Content-Type' : 'application/json'
       }
-    }
-    )
+    })
     
-    router.reload()
+    router.reload();
   }
   return (
     <>
