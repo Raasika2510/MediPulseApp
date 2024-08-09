@@ -5,10 +5,7 @@ import Checkbox from "../components/ui/Checkbox";
 
 import { useState, useEffect } from "react"
 import { useForm } from "react-hook-form";
-export default function GetStarted() { 
-  const [fullName, setfullName] = useState('')
-  const [emailID, setemailID] = useState('')
-  const [concern, setInfo] = useState('')
+export default function GetStarted() {  
 
   const {register, handleSubmit, reset, formState:{errors}} = useForm()
  
