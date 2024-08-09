@@ -18,14 +18,13 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Project Initiative
+- Create a hospital website using Nextjs and GooglesheetsAPI
+- List features to be integrated into the site
+- Create a customer service chatbot using Gemini API
+- Create an RSVP form for upcoming concent of home-remedy bot
+- Deploy project to vercel as [MediPulseApp](https://medi-pulse-app.vercel.app/)
+ 
 
 ## Deploy on Vercel
 
