@@ -1,15 +1,13 @@
 import Head from "next/head";
 import Input from "../components/ui/Input";
 import Button from "../components/ui/Button"; 
-
-import { useRouter } from "next/router";
-
+ 
 import { useState, useEffect } from "react"
 import { useForm } from "react-hook-form";
 export default function GetStarted() {  
 
 const {register, handleSubmit, reset, formState:{errors}} = useForm();
- const router = useRouter();
+  
 
   function submitHandler(data){
     console.log(data)
@@ -20,8 +18,7 @@ const {register, handleSubmit, reset, formState:{errors}} = useForm();
         'Content-Type' : 'application/json'
       }
     })
-    
-    router.reload();
+     
   }
   return (
     <>
