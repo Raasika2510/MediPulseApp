@@ -30,7 +30,9 @@ async function  handler(req, res) {
           values: [[Name, Email, Concern]]
         }
       }, {});
-}
+} else {
+        res.status(405).json({ error: 'Method not allowed' });
+    }
 
 }
 
