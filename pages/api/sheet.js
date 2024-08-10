@@ -1,6 +1,6 @@
 import { google } from "googleapis";
 async function  handler(req, res) {
-    if (req.method === 'PUT'){
+    if (req.method === 'POST'){
         const {Name, Email, Concern} = req.body
         console.log(Name, Email, Concern)
         console.log('Client Email:', process.env.CLIENT_EMAIL);
