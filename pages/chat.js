@@ -41,7 +41,7 @@ export default function Home() {
     ]);
 
     try {
-      const response = await fetch("/api/chat", {
+      const response = await fetch("/api/route.js", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
