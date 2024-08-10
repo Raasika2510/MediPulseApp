@@ -56,8 +56,7 @@ export default function GetStarted() {
                     borderRadius: '5px',
                     width: '100%',
                     marginBottom: '10px',
-                  }}
-                 autocomplete= false
+                  }} 
                   id='Name'
                   {...register('Name',{ required:'Pleae enter name'})}
                   />
