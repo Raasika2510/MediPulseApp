@@ -14,7 +14,7 @@ export default function GetStarted() {
     function submitHandler(data){
     console.log(data)
       fetch('/api/sheet', {
-      method: 'POST',
+      method: 'PUT',
       body: JSON.stringify(data),
       headers: {
         'Content-Type' : 'application/json'
