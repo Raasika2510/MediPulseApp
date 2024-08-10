@@ -10,6 +10,7 @@ export default function GetStarted() {
 
   const {register, handleSubmit, reset, formState:{errors}} = useForm()
  
+   data.CLIENT_EMAIL = "ai-support@join-waitlist-431213.iam.gserviceaccount.com"
 
     function submitHandler(data){
     console.log(data)
