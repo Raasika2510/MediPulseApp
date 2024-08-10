@@ -3,7 +3,7 @@ async function  handler(req, res) {
     if (req.method === 'POST'){
         const {Name, Email, Concern} = req.body
         console.log(Name, Email, Concern)
-        console.log('Client Email:', process.env.NEXT_PUBLIC_CLIENT_EMAIL);
+        console.log('Client Email:', process.env.NEXT_PUBLIC_client_email);
         const auth= new google.auth.GoogleAuth({
             projectId: "join-waitlist-431213",
         credentials:{
