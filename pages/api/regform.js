@@ -7,9 +7,9 @@ async function handle(req, res) {
         const auth= new google.auth.GoogleAuth({
             projectId: "join-waitlist-431213",
         credentials:{
-            client_email: process.env.NEXT_PUBLIC_CLIENT_EMAIL,
-            client_id: process.env.NEXT_PUBLIC_CLIENT_ID,
-            private_key : process.env.NEXT_PUBLIC_PRIVATE_KEY
+            client_email: process.env.CLIENT_EMAIL1,
+            client_id: process.env.CLIENT_ID1,
+            private_key : process.env.PRIVATE_KEY1.replace(/\\n/g, "\n")
         },
         scopes:[
             'https://www.googleapis.com/auth/drive',
