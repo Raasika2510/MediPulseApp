@@ -11,7 +11,7 @@ const {register, handleSubmit, reset, formState:{errors}} = useForm();
 
   function submitHandler(data){
     console.log(data)
-    fetch('/api/regform', {
+    fetch('api/regform', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
