@@ -4,12 +4,12 @@ import Button from "../components/ui/Button";
 import { useState, useEffect } from "react"
 import { useForm } from "react-hook-form";
  
-
+import {useRouter} from "next/router"
 
 export default function GetStarted() {  
 
   const {register, handleSubmit, reset, formState:{errors}} = useForm()
- 
+ const router = useRouter()
 
   function submitHandler(data){
     console.log(data)
@@ -21,6 +21,8 @@ export default function GetStarted() {
       }
     }
     )
+   router.reload()
+
  
   }
   return (
