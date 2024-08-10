@@ -71,4 +71,4 @@ async function POST(req) {
   return new NextResponse(stream); // Return the stream as the response
 }
  
-default export POST;
+export default POST;
