@@ -11,9 +11,9 @@ export default function GetStarted() {
   const {register, handleSubmit, reset, formState:{errors}} = useForm()
  
 
-  function submitHandler(data){
+  async function submitHandler(data){
     console.log(data)
-    fetch('/api/sheet', {
+    await fetch('/api/sheet', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
