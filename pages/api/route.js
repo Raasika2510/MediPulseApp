@@ -35,7 +35,7 @@ When the user shows gratitude, respond with: "I’m glad I could assist. Wishing
 `;
 
 // POST function to handle incoming requests
-default export async function POST(req) {
+async function POST(req) {
   // create a new instance of the GoogleGenerativeAI client
   const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -70,5 +70,5 @@ default export async function POST(req) {
 
   return new NextResponse(stream); // Return the stream as the response
 }
-
-export POST;
+ 
+default export POST;
