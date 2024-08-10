@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "dependencies": {
+  "dependencies": { 
+    "next": "^14.2.5",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@google-ai/generativelanguage": "^2.6.0",
